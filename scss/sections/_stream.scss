@@ -1,0 +1,19 @@
+.stream {
+  margin-bottom: 200px;
+}
+
+.stream__title {
+  @include h2;
+
+  margin-bottom: 30px;
+}
+
+.stream__sub {
+  @include sub;
+
+  margin-bottom: 50px;
+}
+
+.stream__video {
+  text-align: center;
+}

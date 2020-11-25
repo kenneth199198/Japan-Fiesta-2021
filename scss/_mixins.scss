@@ -1,0 +1,69 @@
+// BUTTONS
+@mixin button {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+@mixin button-hero {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+// PAGINATION
+@mixin pagination {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+// EXHIBITORS
+@mixin exhibitors {
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+// TRANSITIONS
+@mixin transition {
+  transition: 200ms all ease-in-out;
+}
+
+// TYPOGRAPHY
+@mixin h2 {
+  font-size: 42px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-align: center;
+}
+
+@mixin sub {
+  font-size: 26px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-align: center;
+}
+
+@mixin body {
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 1.6;
+}
+
+@mixin name {
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+@mixin streamer-description {
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 1.6;
+  text-align: center;
+}

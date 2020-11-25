@@ -1,0 +1,18 @@
+.intro {
+  margin-bottom: 200px;
+}
+
+.intro__title {
+  @include h2;
+
+  margin-bottom: 30px;
+}
+
+.intro__description {
+  @include body;
+
+  text-align: center;
+  width: 554px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}

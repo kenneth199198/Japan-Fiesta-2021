@@ -1,0 +1,68 @@
+.performer {
+  margin-bottom: 100px;
+}
+
+.performer__title {
+  @include sub;
+
+  margin-bottom: 20px;
+}
+
+.performer__sub {
+  @include sub;
+}
+
+.pagination {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-top: 50px;
+  box-shadow: $shadow;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+.pagination__page {
+  @include pagination;
+  @include transition;
+
+  background: $wash;
+  padding: 30px 0;
+  text-align: center;
+  color: $secondary;
+
+  & ~ .pagination__page {
+    border-left: 1px solid $dirty;
+  }
+
+  &:hover {
+    background: $dirty;
+  }
+
+  &.active {
+    background: $secondary;
+    color: $wash;
+  }
+}
+
+.streamers {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+}
+
+.streamer__img {
+  box-shadow: $shadow;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.streamer__name {
+  @include name;
+
+  margin-bottom: 10px;
+}
+
+.streamer__description {
+  @include streamer-description;
+}

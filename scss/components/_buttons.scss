@@ -1,0 +1,101 @@
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button,
+button.button {
+  @include button;
+  @include transition;
+
+  padding: 20px 40px;
+  border-radius: 5px;
+  box-shadow: $shadow;
+  border: 2px solid transparent;
+}
+
+// HERO
+.button--hero {
+  @include button-hero;
+  
+  color: $wash;
+}
+
+.button--hero:nth-child(1) {
+  background: $secondary;
+  margin-right: 50px;
+
+  &:hover,
+  &:active {
+    background: $wash;
+    color: $secondary;
+    border: 2px solid $secondary;
+    box-shadow: none;
+  }
+}
+
+.button--hero:nth-child(2) {
+  background: $main;
+
+  &:hover,
+  &:active {
+    background: $wash;
+    color: $main;
+    border: 2px solid $main;
+    box-shadow: none;
+  }
+}
+
+// STREAM
+.button--stream {
+  background: $main;
+  color: $wash;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  margin: 30px auto 0;
+
+  svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+
+    path {
+      @include transition;
+    }
+  }
+
+  &:hover,
+  &:active {
+    background: $wash;
+    color: $main;
+    border: 2px solid $main;
+    box-shadow: none;
+
+    path:nth-child(1) {
+      fill: $main;
+    }
+
+    path:nth-child(2) {
+      fill: $wash;
+    }
+  }
+}
+
+// FOOTER
+.button--footer {
+  @include transition;
+
+  background: $secondary;
+  color: $wash;
+  cursor: pointer;
+
+  &:hover,
+  &:active {
+    background: $wash;
+    color: $secondary;
+    border: 2px solid $secondary
+  }
+}

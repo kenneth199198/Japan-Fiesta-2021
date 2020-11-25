@@ -1,0 +1,57 @@
+.footer {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.footer__title {
+  @include h2;
+
+  margin-bottom: 50px;
+}
+
+.footer__form {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  margin: 0 auto 50px;
+}
+
+.footer__form__input {
+  @include body;
+
+  border: 1px solid $dirty;
+  padding: 15px 20px;
+  margin-right: 20px;
+  flex: 1;
+  box-shadow: $shadow;
+  border-radius: 5px;
+  border: 2px solid transparent;
+
+  &:focus {
+    border-color: none;
+    border: 2px solid $wash;
+  }
+}
+
+.footer__description {
+  @include body;
+
+  width: 554px;
+  margin: 0 auto 50px;
+}
+
+.footer__image {
+  width: 300px;
+  margin: 0 auto 50px;
+}
+
+.footer__copyright {
+  @include body;
+  margin-bottom: 20px;
+}
+
+.footer__icon {
+  width: 24px;
+  height: 24px;
+  margin: 0 auto;
+}
