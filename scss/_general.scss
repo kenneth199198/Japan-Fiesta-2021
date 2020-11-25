@@ -8,9 +8,24 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  background: url(./images/jpg/body_pc.jpg);
+  background: url(./images/jpg/body_desktop.jpg);
   background-attachment: fixed;
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat-y;
+
+  @media(min-width: 1370px) {
+    background-size: cover;
+  }
+
+  @media(max-width: 1040px) {
+    background: url(./images/jpg/body_tablet.jpg);
+    background-size: contain;
+  }
+
+  @media(max-width: 630px) {
+    background: url(./images/jpg/body_smartphone.jpg);
+  }
 }
 
 a {

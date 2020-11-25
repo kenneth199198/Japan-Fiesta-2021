@@ -2,4 +2,18 @@
   max-width: 1140px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 100px;
+
+  @media(max-width: 768px) {
+    max-width: 568px;
+    padding: 0;
+  }
+
+  @media(max-width: 720px) {
+    padding: 0 50px;
+  }
+
+  @media(max-width: 630px) {
+    padding: 0 30px;
+  }
 }

@@ -11,6 +11,14 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 700;
+
+  @media(max-width: 780px) {
+    font-size: 14px;
+  }
+
+  @media(max-width: 375px) {
+    font-size: 12px;
+  }
 }
 
 // PAGINATION
