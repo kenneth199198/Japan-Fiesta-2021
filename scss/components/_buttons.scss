@@ -18,6 +18,10 @@ button.button {
   border-radius: 5px;
   box-shadow: $shadow;
   border: 2px solid transparent;
+
+  @media(max-width: 590px) {
+    padding: 20px 0;
+  }
 }
 
 // HERO
@@ -82,10 +86,19 @@ button.button {
   width: fit-content;
   margin: 30px auto 0;
 
+  @media(max-width: 768px) {
+    margin: 20px auto 0;
+    width: 100%;
+  }
+
   svg {
     width: 24px;
     height: 24px;
     margin-right: 10px;
+
+    @media(max-width: 280px) {
+      display: none;
+    }
 
     path {
       @include transition;

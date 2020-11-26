@@ -10,16 +10,13 @@ body {
   font-family: "Roboto", sans-serif;
   background: url(./images/jpg/body_desktop.jpg);
   background-attachment: fixed;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-repeat: repeat-y;
 
-  @media(min-width: 1370px) {
-    background-size: cover;
-  }
-
-  @media(max-width: 1040px) {
+  @media(max-width: 1220px) {
     background: url(./images/jpg/body_tablet.jpg);
+    background-attachment: fixed;
     background-size: contain;
   }
 
