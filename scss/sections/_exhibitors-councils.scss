@@ -1,13 +1,10 @@
 .exhibitors-councils-wrapper {
-  padding: 50px 0 100px;
-  background: rgba(255, 255, 255, 0.1);
+  padding: 100px 0;
+  background: $wash;
+  border-bottom: 1px solid $dirty;
 
   @media(max-width: 768px) {
-    padding: 30px 0 50px;
-  }
-
-  @media(max-width: 520px) {
-    padding: 20px 0 30px;
+    padding: 50px 0;
   }
 }
 

@@ -1,12 +1,24 @@
 .footer {
   padding: 100px 0;
   text-align: center;
+
+  @media(max-width: 768px) {
+    padding: 50px 0;
+  }
+
+  @media(max-width: 375px) {
+    padding: 30px 0;
+  }
 }
 
 .footer__title {
   @include h2;
 
   margin-bottom: 50px;
+
+  @media(max-width: 768px) {
+    margin-bottom: 30px;
+  }
 }
 
 .footer__form {
@@ -14,6 +26,19 @@
   justify-content: center;
   width: 60%;
   margin: 0 auto 50px;
+
+  @media(max-width: 1200px) {
+    width: 80%;
+  }
+
+  @media(max-width: 768px) {
+    width: 100%;
+    margin: 0 auto 30px;
+  }
+
+  @media(max-width: 590px) {
+    flex-direction: column;
+  }
 }
 
 .footer__form__input {
@@ -27,6 +52,15 @@
   border-radius: 5px;
   border: 2px solid transparent;
 
+  @media(max-width: 768px) {
+    flex: 2;
+  }
+
+  @media(max-width: 590px) {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
   &:focus {
     border-color: none;
     border: 2px solid $wash;
@@ -38,16 +72,38 @@
 
   width: 554px;
   margin: 0 auto 50px;
+
+  @media(max-width: 768px) {
+    width: 100%;
+    margin: 0 auto 30px;
+  }
+
+  @media(max-width: 590px) {
+    font-size: 14px;
+  }
 }
 
 .footer__image {
   width: 300px;
   margin: 0 auto 50px;
+
+  @media(max-width: 375px) {
+    width: 80%;
+    margin: 0 auto 30px;
+  }
 }
 
 .footer__copyright {
   @include body;
   margin-bottom: 20px;
+
+  @media(max-width: 768px) {
+    font-size: 14px;
+  }
+
+  @media(max-width: 590px) {
+    font-size: 12px;
+  }
 }
 
 .footer__icon {
