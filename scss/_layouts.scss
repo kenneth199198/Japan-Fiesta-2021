@@ -31,3 +31,21 @@
     padding: 0 15px;
   }
 }
+
+.container-exhibitors-councils {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+
+  @media(max-width: 1510px) {
+    max-width: 1200px;
+  }
+
+  @media(max-width: 1200px) {
+    max-width: 980px;
+  }
+
+  @media(max-width: 980px) {
+    max-width: 780px;
+  }
+  }

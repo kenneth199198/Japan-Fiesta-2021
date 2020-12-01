@@ -37,6 +37,7 @@
   }
 }
 
+
 .pagination__page {
   @include pagination;
   @include transition;
@@ -50,7 +51,8 @@
     border-left: 1px solid $dirty;
   }
 
-  &:hover {
+  &:hover,
+  &:active {
     background: $dirty;
   }
 

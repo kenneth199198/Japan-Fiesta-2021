@@ -16,6 +16,7 @@
 
 .card__header {
   padding: 30px 0;
+  background: $wash;
 
   @media(max-width: 1200px) {
     padding: 20px 0;
@@ -28,6 +29,7 @@
 
 .card__content {
   padding: 20px;
+  background: $dirty;
 
   @media(max-width: 1200px) {
     display: grid;
