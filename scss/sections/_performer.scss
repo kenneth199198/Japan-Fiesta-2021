@@ -20,61 +20,6 @@
   @include sub;
 }
 
-.pagination {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  margin: 50px 0;
-  box-shadow: $shadow;
-  border-radius: 5px;
-  overflow: hidden;
-
-  @media(max-width: 768px) {
-    margin: 30px 0;
-  }
-
-  @media(max-width: 520px) {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-
-.pagination__page {
-  @include pagination;
-  @include transition;
-
-  background: $wash;
-  padding: 30px 0;
-  text-align: center;
-  color: $secondary;
-
-  & ~ .pagination__page {
-    border-left: 1px solid $dirty;
-  }
-
-  &:hover,
-  &:active {
-    background: $dirty;
-  }
-
-  &.active {
-    background: $secondary;
-    color: $wash;
-  }
-
-  @media(max-width: 520px) {
-    &:last-of-type {
-      grid-column: span 3;
-      border-top: 1px solid $dirty;
-    }
-  
-    &:nth-child(1),
-    &:nth-child(2),
-    &:nth-child(3) {
-      border-bottom: 1px solid $dirty;
-    }
-  }
-}
-
 .streamers {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

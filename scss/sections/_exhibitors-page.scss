@@ -4,41 +4,6 @@
   text-align: center;
 }
 
-.pagination-exhibitors {
-  display: flex;
-  grid-template-columns: repeat(7, 1fr);
-  margin: 50px 0 100px;
-  box-shadow: $shadow;
-  border-radius: 5px;
-  overflow: hidden;
-}
-
-.pagination-exhibitors__page {
-  @include pagination;
-  @include transition;
-
-  flex: 1;
-
-  background: $wash;
-  padding: 30px 0;
-  text-align: center;
-  color: $secondary;
-
-  &:nth-child(1) {
-    border-right: 1px solid $dirty;
-  }
-
-  &:hover,
-  &:active {
-    background: $dirty;
-  }
-
-  &.active {
-    background: $secondary;
-    color: $wash;
-  }
-}
-
 .exhibitors-page__sub {
   @include sub;
 
