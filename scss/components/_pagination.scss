@@ -68,4 +68,38 @@
 // EXHIBITORS
 .pagination--exhibitors {
   grid-template-columns: repeat(2, 1fr);
+
+  @media(max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+// EXHIBITORS PAGE
+.pagination--exhibitors-page {
+  grid-template-columns: repeat(5, 1fr);
+  align-items: stretch;
+  justify-content: center;
+  width: fit-content;
+  margin: 50px auto 100px;
+
+  @media(max-width: 768px) {
+    width: 100%;
+    margin: 30px auto 50px;
+  }
+}
+
+.pagination__page--exhibitors-page {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media(max-width: 768px) {
+    padding: 20px;
+
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
 }

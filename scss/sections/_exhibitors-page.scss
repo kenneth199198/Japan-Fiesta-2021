@@ -12,9 +12,13 @@
 
 .exhibitor__card-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 30px;
   margin-bottom: 30px;
+
+  @media(max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .exhibitor__card {
@@ -23,6 +27,10 @@
   border-radius: 5px;
   overflow: hidden;
   padding: 30px;
+
+  @media(max-width: 520px) {
+    padding: 20px;
+  }
 }
 
 .exhibitor__card__header {
@@ -43,37 +51,61 @@
   display: flex;
   align-items: center;
   margin: 30px 0;
+
+  @media(max-width: 1200px) {
+    display: block;
+  }
+
+  @media(max-width: 768px) {
+    display: flex;
+  }
+
+  @media(max-width: 520px) {
+    display: block;
+  }
 }
 
 .exhibitor__card__image {
   margin-right: 20px;
   box-shadow: $shadow;
   border-radius: 5px;
+  object-fit: cover;
+
+  @media(max-width: 1200px) {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  @media(max-width: 768px) {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+
+  @media(max-width: 520px) {
+    height: 250px;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
 }
 
 .exhibitor__card__description {
   @include body;
+
+  @media(max-width: 1520px) {
+    font-size: 14px;
+  }
+
+  @media(max-width: 1200px) {
+    font-size: 16px;
+  }
+
+  @media(max-width: 768px) {
+    font-size: 14px;
+  }
 }
 
 .exhibitor__card__video {
   height: 250px;
   width: 100%;
-}
-
-.button--exhibitor__card {
-  @include transition;
-
-  cursor: pointer;
-  background: $main;
-  color: $wash;
-  margin-top: 30px; 
-  float: right;
-
-  &:hover,
-  &:active {
-    background: $wash;
-    color: $main;
-    border: 2px solid $main;
-    box-shadow: none;
-  }
+  object-fit: cover;
 }

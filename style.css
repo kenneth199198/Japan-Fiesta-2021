@@ -154,7 +154,7 @@ ul {
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 720px) {
+@media (max-width: 768px) {
   .button-wrapper {
     flex-direction: column;
     justify-content: stretch;
@@ -210,7 +210,7 @@ button.button {
     padding: 20px 40px;
   }
 }
-@media (max-width: 720px) {
+@media (max-width: 768px) {
   .button--hero {
     padding: 20px 0;
     width: 100%;
@@ -226,7 +226,7 @@ button.button {
     margin-right: 30px;
   }
 }
-@media (max-width: 720px) {
+@media (max-width: 768px) {
   .button--hero:nth-child(1) {
     margin-right: 0;
     margin-bottom: 20px;
@@ -302,6 +302,26 @@ button.button {
   background: #FFF;
   color: #166FB0;
   border: 2px solid #166FB0;
+}
+
+.button--exhibitor__card {
+  transition: 200ms all ease-in-out;
+  cursor: pointer;
+  background: #E20727;
+  color: #FFF;
+  margin-top: 30px;
+  float: right;
+}
+.button--exhibitor__card:hover, .button--exhibitor__card:active {
+  background: #FFF;
+  color: #E20727;
+  border: 2px solid #E20727;
+  box-shadow: none;
+}
+@media (max-width: 768px) {
+  .button--exhibitor__card {
+    width: 100%;
+  }
 }
 
 .cards {
@@ -475,6 +495,43 @@ button.button {
 
 .pagination--exhibitors {
   grid-template-columns: repeat(2, 1fr);
+}
+@media (max-width: 768px) {
+  .pagination--exhibitors {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.pagination--exhibitors-page {
+  grid-template-columns: repeat(5, 1fr);
+  align-items: stretch;
+  justify-content: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 50px auto 100px;
+}
+@media (max-width: 768px) {
+  .pagination--exhibitors-page {
+    width: 100%;
+    margin: 30px auto 50px;
+  }
+}
+
+.pagination__page--exhibitors-page {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .pagination__page--exhibitors-page {
+    padding: 20px;
+  }
+  .pagination__page--exhibitors-page img {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .hero {
@@ -1033,9 +1090,14 @@ button.button {
 
 .exhibitor__card-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 30px;
   margin-bottom: 30px;
+}
+@media (max-width: 768px) {
+  .exhibitor__card-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .exhibitor__card {
@@ -1044,6 +1106,11 @@ button.button {
   border-radius: 5px;
   overflow: hidden;
   padding: 30px;
+}
+@media (max-width: 520px) {
+  .exhibitor__card {
+    padding: 20px;
+  }
 }
 
 .exhibitor__card__header {
@@ -1067,11 +1134,46 @@ button.button {
   align-items: center;
   margin: 30px 0;
 }
+@media (max-width: 1200px) {
+  .exhibitor__card__content {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  .exhibitor__card__content {
+    display: flex;
+  }
+}
+@media (max-width: 520px) {
+  .exhibitor__card__content {
+    display: block;
+  }
+}
 
 .exhibitor__card__image {
   margin-right: 20px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
   border-radius: 5px;
+  object-fit: cover;
+}
+@media (max-width: 1200px) {
+  .exhibitor__card__image {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .exhibitor__card__image {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 520px) {
+  .exhibitor__card__image {
+    height: 250px;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
 }
 
 .exhibitor__card__description {
@@ -1079,23 +1181,24 @@ button.button {
   letter-spacing: 1px;
   line-height: 1.6;
 }
+@media (max-width: 1520px) {
+  .exhibitor__card__description {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1200px) {
+  .exhibitor__card__description {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .exhibitor__card__description {
+    font-size: 14px;
+  }
+}
 
 .exhibitor__card__video {
   height: 250px;
   width: 100%;
-}
-
-.button--exhibitor__card {
-  transition: 200ms all ease-in-out;
-  cursor: pointer;
-  background: #E20727;
-  color: #FFF;
-  margin-top: 30px;
-  float: right;
-}
-.button--exhibitor__card:hover, .button--exhibitor__card:active {
-  background: #FFF;
-  color: #E20727;
-  border: 2px solid #E20727;
-  box-shadow: none;
+  object-fit: cover;
 }
